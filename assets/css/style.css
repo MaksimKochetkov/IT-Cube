@@ -254,12 +254,12 @@ a {
 
 @keyframes fon {
     0% {
-        background-image: url(./assets/img/logo.png);
+        background-image: url(.../assets/img/logo.png);
         background-size: 7em 7em;
         background-position: 0em 0em;
     }
     100% {
-        background-image: url(./assets/img/logo.png);
+        background-image: url(.../assets/img/logo.png);
         background-size: 7em 7em;
         background-position: 7em 7em;
     }
