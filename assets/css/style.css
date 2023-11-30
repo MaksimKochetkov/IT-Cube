@@ -95,17 +95,17 @@ a {
     height: 6em;
 }
 .greeting__images_img1 {
-    width: 5em;
+    width: 48%;
     /* margin: 0 auto; */
     bottom: 5em;
     animation: img 2s ease-in-out infinite;
 }
 .greeting__images_img2 {
-    width: 5em;
+    width: 48%;
     /* margin: 0 auto; */
     float: right;
     position: relative;
-    animation: img 3s ease-in-out infinite;
+    animation: img 2.1s ease-in-out infinite;
 }
 @keyframes img {
     0% {
@@ -137,11 +137,10 @@ a {
 .rabotniki__p {
     padding: 0 0;
     font-weight: 700;
-    width: 20em;
     margin: 1.5em auto 1em auto;
     text-align: center;
     font-size: 2em;
-    width: 100%;
+    width: 90%;
 }
 .rabotniki__card {
     background-color: #1E293B;
@@ -153,9 +152,11 @@ a {
     transition: 0.5s;
 }
 .rabotniki__card:hover {
-    width: 19em;
-    height: 28em;
+    height: 27em;
     transition: 0.5s;
+    flex-wrap: nowrap;
+    margin: 0em 1em;
+
 }
 .rabotniki__card:hover .rabotniki__avatar_img {
     width: 100%;
@@ -163,7 +164,7 @@ a {
     transition: 0.5s;
 }
 .rabotniki__card:hover .rabotniki__name_h1 {
-    padding: 1em 0 0 0;
+    padding: 0.7em 0 0 0;
     transition: 0.7s;
     width: 100%;
     font-size: 2.3em;
@@ -171,7 +172,7 @@ a {
 .rabotniki__card:hover .rabotniki__desc_h2 {
     transition: 0.5s ease-in-out;
     width: 12em;
-    padding: 1em 0.1em 1em 0.1em;
+    padding: 1em 0em 1em 0em;
 }
 .rabotniki__avatar {
     height: 15em;
@@ -205,4 +206,61 @@ a {
     width: 12em;
     padding: 1em 0.1em 1em 0.1em;
     font-size: 1.3em;
+}
+
+/* location */
+.location {
+    background-color: #1E293B;
+    gap: 0px;
+    width: 90%;
+    border-radius: 10px;
+    animation: border1 5s linear infinite;
+    margin: 1em auto;
+}
+.location p{
+    text-shadow: 0 0 10px 10px #1E293B;
+}
+.location__m {
+    animation: fon 10s linear infinite;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+.location__block1 {
+    /* animation: fon 1s linear infinite; */
+    height: wrap;
+    width: wrap;
+    text-align: center;
+}
+.location__block2 {
+    width: 90%;
+    padding: 1em;
+}
+
+.location__block2_iframe{
+    width: 100%;
+    height: 60vh;
+    border-radius: 10px;
+}
+.location__p {
+    padding: 0 0;
+    margin: 1em auto;
+    font-size: 1.2em;
+    width: 90%;
+    text-align: center;
+}
+
+
+@keyframes fon {
+    0% {
+        background-image: url(/assets/img/logo.png);
+        background-size: 7em 7em;
+        background-position: 0em 0em;
+    }
+    100% {
+        background-image: url(/assets/img/logo.png);
+        background-size: 7em 7em;
+        background-position: 7em 7em;
+    }
 }
