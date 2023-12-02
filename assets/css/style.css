@@ -276,7 +276,7 @@ a {
 @media screen and (max-width: 1016px) {
     .location {
         margin: 0 auto;
-        width: 96%;
+        width: 95%;
     }
     .location__block1 {
         width: 100%;
