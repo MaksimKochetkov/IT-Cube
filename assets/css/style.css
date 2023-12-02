@@ -166,6 +166,7 @@ a {
 .rabotniki__card:hover .rabotniki__name_h1 {
     padding: 0.7em 0 0 0;
     transition: 0.7s;
+    font-family: ;
     width: 100%;
     font-size: 2.3em;
 }
@@ -199,6 +200,8 @@ a {
     font-size: 2em;
     font-weight: 700;
     width: 100%;
+    font-family: 'DotGothic16', sans-serif;
+    letter-spacing: -7px;
 }
 .rabotniki__desc_h2 {
     text-align: center;
@@ -212,14 +215,43 @@ a {
 .location {
     background-color: #1E293B;
     gap: 0px;
-    width: 90%;
+    width: 80%;
     border-radius: 10px;
     animation: border1 5s linear infinite;
     margin: 1em auto;
 }
-.location p{
-    text-shadow: 0 0 10px 10px #1E293B;
+.location__p{
+    /* text-shadow: 2px 2px 20px #1E293B; */
+    height: wrap;
+    width: wrap;
+    padding: 4em 0 0 0;
+    text-shadow: 
+		-0   -2px 0   #1E293B,
+		 0   -2px 0   #1E293B,
+		-0    2px 0   #1E293B,
+		 0    2px 0   #1E293B,
+		-2px -0   0   #1E293B,
+		 2px -0   0   #1E293B,
+		-2px  0   0   #1E293B,
+		 2px  0   0   #1E293B,
+		-1px -2px 0   #1E293B,
+		 1px -2px 0   #1E293B,
+		-1px  2px 0   #1E293B,
+		 1px  2px 0   #1E293B,
+		-2px -1px 0   #1E293B,
+		 2px -1px 0   #1E293B,
+		-2px  1px 0   #1E293B,
+		 2px  1px 0   #1E293B,
+		-2px -2px 0   #1E293B,
+		 2px -2px 0   #1E293B,
+		-2px  2px 0   #1E293B,
+		 2px  2px 0   #1E293B,
+		-2px -2px 0   #1E293B,
+		 2px -2px 0   #1E293B,
+		-2px  2px 0   #1E293B,
+		 2px  2px 0   #1E293B;
 }
+
 .location__m {
     animation: fon 10s linear infinite;
     display: flex;
@@ -229,38 +261,64 @@ a {
 }
 .location__block1 {
     /* animation: fon 1s linear infinite; */
-    height: wrap;
-    width: wrap;
+    height: 100%;
+    width: 40%;
     text-align: center;
+    padding: 1em;
 }
 .location__block2 {
-    width: 90%;
-    padding: 1em;
+    display: flex;
+    width: 40%;
+    margin: 1em;
+    height: 100%;
+    justify-content: center;
+}
+@media screen and (max-width: 997px) {
+    .location {
+        width: 99%;
+    }
+    .location__block1 {
+        width: 100%;
+    }
+    .location__block1:nth-child(2n) {
+        padding: 4.5em 0 0 0;
+    }
+    .location__block2 {
+        width: 100%;
+        height: 45vh;
+    }
+    .location__block2_iframe{
+        width: 100%;
+    }
+    .location__block2:nth-child(odd) {
+        overflow: hidden;
+        display: none;
+        visibility: hidden;
+    }
 }
 
 .location__block2_iframe{
-    width: 100%;
-    height: 60vh;
+    width: 30em;
+    height: 50vh;
     border-radius: 10px;
+    margin: 1.5em 0 0 0;
 }
 .location__p {
-    padding: 0 0;
-    margin: 1em auto;
+    padding: 0.7em 0 0 0;
+    margin: 0 auto;
     font-size: 1.2em;
     width: 90%;
-    text-align: center;
+    text-align: left;
 }
-
-
 @keyframes fon {
     0% {
-        background-image: url("../assets/img/logo.png");
-        background-size: 7em 7em;
+        background-image: url(../img/logofon.png);
+        background-size: 7em 6.5em;
         background-position: 0em 0em;
     }
     100% {
-        background-image: url("../assets/img/logo.png");
-        background-size: 7em 7em;
-        background-position: 7em 7em;
+        background-image: url(../img/logofon.png);
+        background-size: 7em 6.5em;
+        background-position: 7em 6.5em;
     }
 }
