@@ -273,7 +273,7 @@ a {
     height: 100%;
     justify-content: center;
 }
-@media screen and (max-width: 997px) {
+@media screen and (max-width: 1016px) {
     .location {
         width: 96%;
     }
