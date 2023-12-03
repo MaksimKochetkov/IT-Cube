@@ -216,6 +216,36 @@ a {
     padding: 1em 0.1em 1em 0.1em;
     font-size: 1.3em;
 }
+/* meet */
+.meet {
+    width: 100%;
+    display: block;
+    margin: 0 0 1em 0;
+}
+.meet__block3 {
+    height: 6em;
+    background-image: url(../img/andr.svg);
+    background-size: 15em 6em;
+
+}
+.meet__block2 {
+    
+}
+.meet__block2_h1 {
+    font-weight: 700;
+    font-size: 3em;
+    margin: 0 0 0.6em;
+}
+.meet__block2_p {
+    line-height: 2em;
+    width: 90%;
+    text-align: right;
+    padding-left: 2em;
+}
+.meet__block1 {
+    height: 6em;
+    background-image: url(../img/android.svg);
+}
 
 /* location */
 .location {
@@ -400,13 +430,13 @@ a {
 .form__block2 select {
     text-indent: 5px;
 }
-@media screen and (max-width: 764px) {
+@media screen and (max-width: 720px) {
     .form {
         height: 100%;
         flex-wrap: wrap;
         width: 90%;
-        transform: none;
-        transition: none;
+        /* transform: none;
+        transition: none; */
     }
     .form__block1 {
         /* display: none;
