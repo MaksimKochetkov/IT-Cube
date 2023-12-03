@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/reset.css">
 </head>
 <body>
+    <div id="top"></div>
     <header class="header">
         <a href="index.html" class="header__block_a">
         <div class="header__block">
@@ -43,7 +44,7 @@
             <p class="rabotniki__p">Наши дружелюбные учителя, которые вам помогут в образовании:</p>
                 <div class="rabotniki__card">
                     <div class="rabotniki__avatar">
-                        <img src="assets/img/3947ed6ce513eeefb837a042cac2736d.jpg" alt="rabotniki" class="rabotniki__avatar_img">
+                        <img src="assets/img/karina.png" alt="rabotniki" class="rabotniki__avatar_img">
                     </div>
                     <div class="rabotniki__desc">
                         <h1 class="rabotniki__name_h1">Карина</h1>
@@ -52,16 +53,16 @@
                 </div>
                 <div class="rabotniki__card">
                     <div class="rabotniki__avatar">
-                        <img src="assets/img/3947ed6ce513eeefb837a042cac2736d.jpg" alt="rabotniki" class="rabotniki__avatar_img">
+                        <img src="assets/img/kto.png" alt="rabotniki" class="rabotniki__avatar_img">
                     </div>
                     <div class="rabotniki__desc">
-                        <h1 class="rabotniki__name_h1">Алексей</h1>
+                        <h1 class="rabotniki__name_h1">Мария</h1>
                         <h2 class="rabotniki__desc_h2">Объясню вам как настроить IDE (и вообще объясню вам, что это такое).</h2>
                     </div>
                 </div>
                 <div class="rabotniki__card">
                     <div class="rabotniki__avatar">
-                        <img src="assets/img/3947ed6ce513eeefb837a042cac2736d.jpg" alt="rabotniki" class="rabotniki__avatar_img">
+                        <img src="assets/img/misha.png" alt="rabotniki" class="rabotniki__avatar_img">
                     </div>
                     <div class="rabotniki__desc">
                         <h1 class="rabotniki__name_h1">Михаил</h1>
@@ -70,7 +71,7 @@
                 </div>
                 <div class="rabotniki__card">
                     <div class="rabotniki__avatar">
-                        <img src="assets/img/3947ed6ce513eeefb837a042cac2736d.jpg" alt="rabotniki" class="rabotniki__avatar_img">
+                        <img src="assets/img/kirill.png" alt="rabotniki" class="rabotniki__avatar_img">
                     </div>
                     <div class="rabotniki__desc">
                         <h1 class="rabotniki__name_h1">Кирилл</h1>
@@ -79,11 +80,11 @@
                 </div>
                 <div class="rabotniki__card">
                     <div class="rabotniki__avatar">
-                        <img src="assets/img/3947ed6ce513eeefb837a042cac2736d.jpg" alt="rabotniki" class="rabotniki__avatar_img">
+                        <img src="assets/img/dlan.png" alt="rabotniki" class="rabotniki__avatar_img">
                     </div>
                     <div class="rabotniki__desc">
                         <h1 class="rabotniki__name_h1">Длань</h1>
-                        <h2 class="rabotniki__desc_h2">Сделает маунт системы: mount -o rw,remount /system</h2>
+                        <h2 class="rabotniki__desc_h2">Секретная личность. Сделает маунт системы: mount -o rw,remount /system</h2>
                     </div>
                 </div>
         </section>
@@ -116,22 +117,37 @@
           </div>
         </section> -->
         <section>
-            <div class="form">
+            <!-- <div class="form__mbanner">
+                <img src="assets/img/greetings1.png" alt="plakat" class="form__block1_img">
+            </div> -->
+            <form action="" method="get" class="form">
                 <div class="form__block1">
-                    <img src="assets/img/greetings1.png" alt="plakat" class="form__block1_img">
+                    <img src="assets/img/form.svg" alt="plakat" class="form__block1_img">
                 </div>
                 <div class="form__block2">
-                    <input type="text">
+                    <p class="form__block2_p">Попадите к нам в группу! :)</p>
+                    <input type="text" name="" id="" placeholder="Ваше имя*" required>
+                    <input type="text" name="" id="" placeholder="Ваша фамилия*" required>
+                    <input type="text" name="" id="" placeholder="Имя вашего ребёнка">
+                    <input type="text" name="" id="" placeholder="Фамилия вашего ребёнка">
+                    <input type="tel" maxlength="11" name="" id="" placeholder="Номер телефона c 8*" required>
+                    <select placeholder="Выберите группу" name="" id="">
+                        <option value="">---Выберите группу обучения---</option>
+                        <option value="">Группа игроделов</option>
+                        <option value="">Группа приложений</option>
+                        <option value="">Группа создателей офисных пакетов</option>
+                    </select>
+                    <button type="submit">ОТПРАВИТЬ</button>
                 </div>
-            </div>
+            </form>
         </section>
     </main>
 
     <footer>
         <div class="footer">
-            <div class="footer__block3">
+            <a class="footer__block3_a footer__block3" href="#top">
                 <img src="assets/img/arrowwhite.png" alt="arrow" class="footer__block3_img">
-            </div>
+            </a>
                 <div class="footer__block1">
                     <img src="assets/img/svgviewer-png-output.png" alt="logo" class="footer__block1_img">
                 <!-- <p class="footer__block_p"><span class="footer__block_p-span">IT-</span>Куб</p> -->
