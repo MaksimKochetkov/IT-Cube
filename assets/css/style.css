@@ -226,7 +226,17 @@ a {
     height: 6em;
     background-image: url(../img/andr.svg);
     background-size: 15em 6em;
-
+    animation: andrfon 5s linear infinite;
+}
+@keyframes andrfon {
+    0% {
+        background-size: 7em 7em;
+        background-position: 0em 0em;
+    }
+    100% {
+        background-size: 7em 7em;
+        background-position: 7em 0em;
+    }
 }
 .meet__block2 {
     
@@ -406,13 +416,16 @@ a {
     color: #fff;
     animation: border1 3s linear infinite !important;
     font-family: 'JetBrains Mono', monospace !important;
+    transition: 0.3s;
 }
 .form__block2 input:hover, select:hover, button:hover {
     background-color: #64748B;
+    transition: 0.3s;
 }
 .form__block2 input:focus, select:focus, button:focus {
     background-color: #0F172A;
     outline: none;
+    transition: 0.3s;
 }
 .form__block2 button[type="submit"] {
     font-family: 'JetBrains Mono', monospace !important;
@@ -422,9 +435,11 @@ a {
     border-radius: 10px;
     width: 90%;
     border: 1px solid #64748B;
+    transition: 0.3s;
 }
 .form__block2 button[type="submit"]:hover {
     background-color: #34D399;
+    transition: 0.3s;
 }
 
 .form__block2 select {
